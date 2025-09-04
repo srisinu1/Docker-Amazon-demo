@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ srisinu1/Docker-Amazon-demo.git'
+                git branch: 'main', url: 'https://github.com/srisinu1/Docker-Amazon-demo.git'
             }
         }
         stage('Build Docker Image') {
