@@ -36,7 +36,7 @@ pipeline {
                     // Remove previous container if any
                     sh "docker rm -f $CONTAINER_NAME || true"
                     // Run container detached for deployment
-                    sh "docker run -d --name $CONTAINER_NAME -p 8085:8080 $IMAGE_NAME"
+                    sh "docker run -d --name $CONTAINER_NAME -p 8090:8080 $IMAGE_NAME"
                 }
             }
         }
